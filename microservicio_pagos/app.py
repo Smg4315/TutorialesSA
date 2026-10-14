@@ -27,7 +27,7 @@ def realizar_compra():
 
 	return jsonify(
 		{
-			"mensaje": "Compra procesada correctamente por el microservicio Flask (v2).",
+			"mensaje": "Compra procesada exitosamente por el Microservicio Flask.",
 			"producto_id": producto_id,
 			"cantidad": cantidad,
 			"estado": "Aprobado",
