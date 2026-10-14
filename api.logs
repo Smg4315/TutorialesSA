@@ -1,0 +1,9 @@
+[2026-10-13 02:26:48,681] INFO - [PAGO EXITOSO] Procesador: BancoNacionalProcesador | Monto: $178.50
+[2026-10-13 02:26:48,683] INFO - [INVENTARIO DESCONTADO] Libro: ' Clean Code en Python ' (ID: 1) | Descontados: 1 | Stock restante: 7
+[2026-10-13 02:26:48,685] INFO - [ORDEN REGISTRADA] Orden ID: 3 creada para Libro ID: 1
+[2026-10-13 02:26:52,581] INFO - [PAGO EXITOSO] Procesador: BancoNacionalProcesador | Monto: $178.50
+[2026-10-13 02:26:52,583] INFO - [INVENTARIO DESCONTADO] Libro: ' Clean Code en Python ' (ID: 1) | Descontados: 1 | Stock restante: 6
+[2026-10-13 02:26:52,585] INFO - [ORDEN REGISTRADA] Orden ID: 4 creada para Libro ID: 1
+[2026-10-13 02:42:42,707] INFO - [PAGO EXITOSO] Procesador: BancoNacionalProcesador | Monto: $178.50
+[2026-10-13 02:42:42,711] INFO - [INVENTARIO DESCONTADO] Libro: ' Clean Code en Python ' (ID: 1) | Descontados: 1 | Stock restante: 5
+[2026-10-13 02:42:42,717] INFO - [ORDEN REGISTRADA] Orden ID: 5 creada para Libro ID: 1

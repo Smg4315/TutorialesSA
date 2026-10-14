@@ -133,3 +133,30 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configuración del archivo de logs
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'detallado': {
+            'format': '[{asctime}] {levelname} - {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'archivo_log': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'api.logs',
+            'formatter': 'detallado',
+        },
+    },
+    'loggers': {
+        'tienda': {
+            'handlers': ['archivo_log'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}

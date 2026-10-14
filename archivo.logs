@@ -1,0 +1,105 @@
+Watching for file changes with StatReloader
+Not Found: /
+[10/Sep/2026 02:55:23] "GET / HTTP/1.1" 404 2783
+Not Found: /favicon.ico
+[10/Sep/2026 02:55:24] "GET /favicon.ico HTTP/1.1" 404 2834
+/Users/saimon_4315/Documents/6to semestre/Arquitectura de Software/Tutoriales/TEIS-DjangoSOLID/tienda_app/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 10, 2026 - 02:54:41
+Django version 6.1.1, using settings 'Tienda.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/Users/saimon_4315/Documents/6to semestre/Arquitectura de Software/Tutoriales/TEIS-DjangoSOLID/tienda_app/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 10, 2026 - 02:56:41
+Django version 6.1.1, using settings 'Tienda.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+[10/Sep/2026 02:57:34] "GET /compra-rapida/1/ HTTP/1.1" 200 430
+[10/Sep/2026 02:58:01] "POST /compra-rapida/1/ HTTP/1.1" 200 16
+/Users/saimon_4315/Documents/6to semestre/Arquitectura de Software/Tutoriales/TEIS-DjangoSOLID/tienda_app/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 10, 2026 - 02:56:57
+Django version 6.1.1, using settings 'Tienda.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/Users/saimon_4315/Documents/6to semestre/Arquitectura de Software/Tutoriales/TEIS-DjangoSOLID/tienda_app/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 10, 2026 - 03:00:11
+Django version 6.1.1, using settings 'Tienda.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+[10/Sep/2026 03:02:41] "POST /compra-rapida/1/ HTTP/1.1" 200 31
+[10/Sep/2026 03:02:44] "GET /compra-rapida/1/ HTTP/1.1" 200 430
+[10/Sep/2026 03:03:35] "POST /compra-rapida/1/ HTTP/1.1" 200 31
+/Users/saimon_4315/Documents/6to semestre/Arquitectura de Software/Tutoriales/TEIS-DjangoSOLID/tienda_app/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 10, 2026 - 03:01:08
+Django version 6.1.1, using settings 'Tienda.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/Users/saimon_4315/Documents/6to semestre/Arquitectura de Software/Tutoriales/TEIS-DjangoSOLID/tienda_app/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 10, 2026 - 03:04:07
+Django version 6.1.1, using settings 'Tienda.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+/Users/saimon_4315/Documents/6to semestre/Arquitectura de Software/Tutoriales/TEIS-DjangoSOLID/tienda_app/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 10, 2026 - 03:05:16
+Django version 6.1.1, using settings 'Tienda.settings'
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+Watching for file changes with StatReloader
+[10/Sep/2026 03:05:35] "POST /compra-rapida/1/ HTTP/1.1" 200 31
+[10/Sep/2026 03:05:39] "GET /compra-rapida/1/ HTTP/1.1" 200 1267
+[10/Sep/2026 03:05:43] "POST /compra-rapida/3/ HTTP/1.1" 200 31
+[10/Sep/2026 03:05:45] "POST /compra-rapida/2/ HTTP/1.1" 200 31
+[10/Sep/2026 03:05:48] "POST /compra-rapida/1/ HTTP/1.1" 200 31
+[2026-10-13 02:19:11,670] INFO - [PAGO EXITOSO] Procesador: BancoNacionalProcesador | Monto: $178.50
+[2026-10-13 02:19:11,673] INFO - [INVENTARIO DESCONTADO] Libro: ' Clean Code en Python ' (ID: 1) | Descontados: 1 | Stock restante: 9
+[2026-10-13 02:19:11,682] INFO - [ORDEN REGISTRADA] Orden ID: 1 creada para Libro ID: 1
+[2026-10-13 02:19:37,780] INFO - [PAGO EXITOSO] Procesador: BancoNacionalProcesador | Monto: $178.50
+[2026-10-13 02:19:37,782] INFO - [INVENTARIO DESCONTADO] Libro: ' Clean Code en Python ' (ID: 1) | Descontados: 1 | Stock restante: 8
+[2026-10-13 02:19:37,783] INFO - [ORDEN REGISTRADA] Orden ID: 2 creada para Libro ID: 1

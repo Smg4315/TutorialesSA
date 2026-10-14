@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Compra Rapida</h1>
+    {% for libro in libros %}
+        <section>
+            <h2>{{ libro.titulo }}</h2>
+            <p>Precio: ${{ libro.precio }}</p>
+            <form method="post" action="{% url 'compra_rapida' libro.id %}">
+                {% csrf_token %}
+                <button type="submit">Comprar Ya</button>
+            </form>
+        </section>
+    {% empty %}
+        <p>No hay libros disponibles.</p>
+    {% endfor %}
+</body>
+</html>

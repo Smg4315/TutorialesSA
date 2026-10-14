@@ -14,6 +14,17 @@ class CompraAPIView(APIView):
     POST /api/v1/comprar/
     Payload: {"libro_id": 1, "direccion_envio": "Calle 123", "cantidad": 1}
     """
+    serializer_class = OrdenInputSerializer
+
+    def get(self, request):
+        return Response({
+            "mensaje": "Usa POST para realizar una compra.",
+            "ejemplo_payload": {
+                "libro_id": 1,
+                "direccion_envio": "Calle 123 # 45-67",
+                "cantidad": 1
+            }
+        })
 
     def post(self, request):
         serializer = OrdenInputSerializer(data=request.data)
