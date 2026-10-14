@@ -1,30 +1,28 @@
-# 1. Usamos una imagen base oficial de Python ligera (Slim es ideal para producción/dev)
+# Imagen base de Python ligera para ejecutar Django.
 FROM python:3.11-slim
 
-# 2. Evitamos que Python escriba archivos .pyc y aseguramos que los logs se vean en tiempo real
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+# Evita archivos .pyc y envía los logs directamente a la salida del contenedor.
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
 
-# 3. Establecemos el directorio de trabajo dentro del contenedor (el "quirófano")
+# Directorio de trabajo dentro del contenedor.
 WORKDIR /app
 
-# 4. Instalamos dependencias del sistema operativo necesarias para Postgres
-# (Opcional si usas psycopg2-binary, pero recomendable para evitar errores)
+# Instala las bibliotecas de sistema requeridas para dependencias de PostgreSQL.
 RUN apt-get update && apt-get install -y \
     gcc \
     libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# 5. Copiamos los requerimientos e instalamos dependencias de Python
-COPY requirements.txt /app/
+# Instala las dependencias de Python antes de copiar el código de la aplicación.
+COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 6. Copiamos el resto del código fuente del proyecto
-COPY . /app/
+# Copia el código del proyecto.
+COPY . .
 
-# 7. Exponemos el puerto 8000
+# Puerto interno de Gunicorn; Nginx publica la aplicación hacia el exterior.
 EXPOSE 8000
 
-# 8. Comando por defecto al iniciar el contenedor
-# Importante: 0.0.0.0 permite que el contenedor sea accesible desde fuera
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Inicia Django con Gunicorn, igual que el servicio web_django de Compose.
+CMD ["gunicorn", "Tienda.wsgi:application", "--bind", "0.0.0.0:8000"]
