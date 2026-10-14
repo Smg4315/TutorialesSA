@@ -3,6 +3,7 @@ from tienda_app.models import Libro, Orden
 
 
 class LibroSerializer(serializers.ModelSerializer):
+    stock_actual = serializers.SerializerMethodField()
 
     class Meta:
         model = Libro

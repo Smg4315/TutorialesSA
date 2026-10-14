@@ -3,9 +3,20 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 
-@app.route("/api/v2/comprar", methods=["POST"])
+@app.route("/api/v2/comprar", methods=["GET", "POST"], strict_slashes=False)
 def realizar_compra():
 	"""Procesa una compra en la versión 2 del microservicio."""
+	if request.method == "GET":
+		return jsonify(
+			{
+				"mensaje": "El endpoint está disponible. Envía una solicitud POST para realizar una compra.",
+				"ejemplo": {
+					"producto_id": 1,
+					"cantidad": 1,
+				},
+			}
+		), 200
+
 	datos = request.get_json(silent=True) or {}
 
 	producto_id = datos.get("producto_id")
